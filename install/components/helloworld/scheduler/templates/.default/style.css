@@ -362,6 +362,15 @@ input.form-control:checked ~ .checkbox-custom {
 .ticket.item_few .ticket-block:hover:after {
   background: #0a80e2;
 }
+.control-panel.no-fill .control-panel__link {
+  background-color: #46a7f7;
+}
+.control-panel.no-fill .control-panel__block {
+  background-color: transparent;
+}
+.control-panel.no-fill:before {
+  display: none;
+}
 @-webkit-keyframes effect {
   100% {
     opacity: 0;
