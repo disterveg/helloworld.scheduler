@@ -32,6 +32,7 @@ $APPLICATION->SetTitle("Расписание"); ?>
         ),
         "MESSAGE_SUCCESS" => "",
         "TITLE_SECTION" => "Запись на приём",
+        "FILL_SIDEBAR" => "Y",
         "IS_FLEXSLIDER" => "Y",
         "IS_MASKED_INPUT" => "Y",
         "IS_VALIDATER" => "Y",
