@@ -67,6 +67,12 @@ $arComponentParameters = array(
             "TYPE" => "STRING",
             "DEFAULT" => "9",
         ),
+        "FILL_SIDEBAR" => array(
+            "PARENT" => "BASE",
+            "NAME" => Loc::getMessage("FILL_SIDEBAR"),
+            "TYPE" => "CHECKBOX",
+            "DEFAULT" => "Y",
+        ),
         "NAME_CARD_IM" => array(
             "PARENT" => "SIGN",
             "NAME" => Loc::getMessage("NAME_CARD_IM"),

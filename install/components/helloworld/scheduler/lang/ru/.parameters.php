@@ -23,5 +23,6 @@ $MESS['PLUGINS'] = "Сторонние библиотеки";
 $MESS['SIGN'] = "Подписи";
 $MESS['LINK_PRIVACY'] = "Ссылка на текст политики соглашения";
 $MESS['LINK_PRIVACY_DEFAULT'] = "/include/licenses_detail.php";
+$MESS['FILL_SIDEBAR'] = "Залить левый сайдбар";
 $MESS['MESSAGE_SUCCESS_DEFAULT'] = "Спасибо. Ваша запись принята.<br>После подтверждения записи менеджером на указанный Вами E-mail будет отправлено письмо.";
 ?>

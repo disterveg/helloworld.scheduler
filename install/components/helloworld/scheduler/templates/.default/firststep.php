@@ -21,7 +21,7 @@ use Bitrix\Main\Localization\Loc;
 ?>
 <div class="maxwidth-screen">
     <div class="wrapper__content">
-        <div class="control-panel">
+        <div class="control-panel <?= $arParams['FILL_SIDEBAR'] == 'Y' ? '' : 'no-fill'?>">
             <? include_once("stepdisplay.php");?>
         </div>
         <div class="content-col">

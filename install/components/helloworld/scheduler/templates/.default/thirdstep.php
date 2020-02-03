@@ -23,7 +23,7 @@ $request = Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 $request->addFilter(new \Bitrix\Main\Web\PostDecodeFilter); ?>
 <div class="maxwidth-screen">
     <div class="wrapper__content">
-        <div class="control-panel">
+        <div class="control-panel <?= $arParams['FILL_SIDEBAR'] == 'Y' ? '' : 'no-fill'?>">
             <? include_once("stepdisplay.php");?>
         </div>
         <div class="content-col">
@@ -44,7 +44,7 @@ $request->addFilter(new \Bitrix\Main\Web\PostDecodeFilter); ?>
                     "SEF_URL_TEMPLATES" => $arParams['SEF_URL_TEMPLATE'],
                     "IS_MASKED_INPUT" => $arParams['IS_MASKED_INPUT'],
                     "IS_VALIDATER" => $arParams['IS_VALIDATER'],
-                    "LINK_PRIVACY" => $arParams['LINK_PRIVACY'],
+                    "LINK_PRIVACY" => $arParams['LINK_PRIVACY']
                 ),
                 $component
             );?>

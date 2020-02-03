@@ -310,9 +310,11 @@ input.form-control:checked ~ .checkbox-custom {
 	-webkit-animation: effect 0.65s linear;
 	animation: effect 0.65s linear;
 }
+
 .control-panel__block {
 	background-color: @bcolor;
 }
+
 .control-panel__item.active {
 	background-color: @bcolor_00a3da;
 	background-image: linear-gradient(to bottom, rgba(37, 43, 48, 0), @bcolor_008fc7);
@@ -407,6 +409,12 @@ input.form-control:checked ~ .checkbox-custom {
 }
 .ticket.item_few .ticket-block:hover:after {
 	background: @acolor;
+}
+.control-panel.no-fill .control-panel__block {
+	background-color: transparent;
+}
+.control-panel.no-fill:before {
+	display: none;
 }
 @-webkit-keyframes effect {
 	100% {
