@@ -1,6 +1,6 @@
 <?php
 $helloworld_scheduler_default_option = [
-    "enable_recaptcha" => "N",
+    "enable_recaptcha" => "0",
     "site_key" => "",
     "secret_key" => "",
     "main_color" => "#46a7f7",
