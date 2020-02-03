@@ -1,0 +1,4 @@
+<?
+$MESS["HELLOWORLD_SCHEDULER__NAME_ALL_ELEMENTS"] = "Все записи на прием";
+$MESS["HELLOWORLD_SCHEDULER_GADGET_NO_APPOINTMENTS"] = "Нет записей на прием";
+?>

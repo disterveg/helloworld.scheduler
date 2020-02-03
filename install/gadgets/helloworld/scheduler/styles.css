@@ -1,0 +1,66 @@
+div[id="tSCHEDULER@111111111"] .bx-gadgets-top-wrap {
+	background: #3596fc !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+div[id="tSCHEDULER@111111111"] .bx-gadgets-top-wrap .bx-gadgets-top-title {
+	color: #fff;
+}
+div[id="tSCHEDULER@111111111"] .bx-gadgets-content {
+	background:-webkit-linear-gradient(to bottom, rgb(26, 152, 255), rgb(28, 81, 144));
+	background:-moz-linear-gradient(to bottom, rgb(26, 152, 255), rgb(28, 81, 144));
+	background:-ms-linear-gradient(to bottom, rgb(26, 152, 255), rgb(28, 81, 144));
+	background:-o-linear-gradient(to bottom, rgb(26, 152, 255), rgb(28, 81, 144));
+	background:linear-gradient(to bottom, rgb(26, 152, 255), rgb(28, 81, 144));
+	-webkit-box-shadow:inset 0 1px 0 #5c95cc;
+	padding:12px 13px 15px;
+	position: relative;
+	border: none;
+	box-shadow: none;
+}
+
+div[id="tSCHEDULER@111111111"] .bx-gadgets-text {
+	color: #fff;
+	position: relative;
+	margin-bottom: 15px;
+	z-index: 0;
+}
+
+div[id="tSCHEDULER@111111111"] .bx-gadgets-text:before {
+	content: '';
+	border-color: red;
+}
+
+div[id="tSCHEDULER@111111111"] .bx-gadgets-text a b {
+	color: #fff;
+	font-size: 16px;
+}
+
+div[id="tSCHEDULER@111111111"] .bx-gadgets a {
+	color: #fff;
+}
+
+div[id="tSCHEDULER@111111111"] .all-link a {
+	color: #a2cbf7;
+	font-size: 16px;
+}
+
+div[id="tSCHEDULER@111111111"]:hover .bx-gadgets-content {
+	margin-left: -1px;
+	margin-right: -1px;
+	border-bottom: none;
+}
+
+div[id="tSCHEDULER@111111111"] .bx-gadgets-text:before {
+	content: '';
+	background: rgba(53, 150, 252, 0.29);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 5px;
+	z-index: -1;
+}
+
+div[id="tSCHEDULER@111111111"] .inner-text {
+	padding: 15px;
+}

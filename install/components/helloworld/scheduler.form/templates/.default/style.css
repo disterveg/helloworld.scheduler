@@ -1,0 +1,727 @@
+.info-item {
+    position: absolute;
+    top: auto;
+    left: 77px;
+    bottom: 82px
+}
+
+.info-item.light h1 {
+    color: #fff
+}
+
+.info-item.light .text-block {
+    color: #fff
+}
+
+.main-banner.carousel.fade #darken:before {
+    content: "";
+    background-color: #1d2333;
+    opacity: 0.349;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.col__form {
+    width: 100%
+}
+
+.wrapper-field {
+    width: 33.3333333%;
+    margin-bottom: 20px;
+    padding: 0 20px
+}
+
+.radio-custom, .label-confirm {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px
+}
+
+.personal-info-input.custom-radio {
+    position: absolute;
+    visibility: hidden
+}
+
+.privacy-policy {
+    position: absolute;
+    visibility: hidden
+}
+
+.time-description_text {
+    border: none;
+    cursor: default;
+    font: 17px unset !important;
+    background: transparent !important;
+    width: 100%;
+    display: block;
+    color: #0f3840;
+    margin-bottom: 20px
+}
+
+.success__form {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.success__form.active {
+    display: block
+}
+
+input.form-control:checked ~ .checkbox-custom::before {
+    color: #fff;
+    background: transparent;
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 8px;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 1px;
+    border-color: #fff;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+input.form-control:checked ~ .checkbox-custom {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center
+}
+
+.error__text {
+    padding-left: 20px;
+    color: #e62222;
+    margin-bottom: 30px
+}
+
+.form-control.docs-checkboxes {
+    position: absolute;
+    visibility: hidden
+}
+
+.col-info__visit {
+    width: 33%
+}
+
+.info-admission {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.col-confirmation-info {
+    width: 64%;
+    padding-left: 30px
+}
+
+.wrapper-top-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px
+}
+
+.left-col__form {
+    width: 68%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px
+}
+
+.multiEnumeration-list {
+    display: flex;
+    flex-direction: column
+}
+
+.label-full-name, .label-tel-number, .label-e-mail {
+    display: block;
+    position: relative
+}
+
+.label-confirm {
+    color: #93a2a8;
+    font-size: 16px
+}
+
+.label-full-name input, .label-tel-number input, .label-e-mail input, .label-birth-date input, .label-last-visit input {
+    width: 100%
+}
+
+.personal-info-input {
+    height: 45px;
+    border: 1px solid #eaf7fa;
+    padding-left: 17px
+}
+
+input {
+    background-color: #fff !important
+}
+
+.personal-info-quiz {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 15px
+}
+
+.personal-info-quiz label {
+    position: relative
+}
+
+.personal-info-quiz .label-confirm {
+    display: inline;
+    color: #0f3840
+}
+
+.personal-info-quiz_title {
+    margin-bottom: 20px
+}
+
+.personal-info-quiz_title.label-confirm {
+    color: #93a2a8;
+    font-size: 16px
+}
+
+.personal-info_block input {
+    height: 45px;
+    border: 1px solid #eaf7fa;
+    padding-left: 17px
+}
+
+.radio-custom {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.info-admission_title {
+    text-align: left;
+    margin-bottom: 10px
+}
+
+.visit_title {
+    color: #0f3840;
+    font-size: 20px;
+    margin-bottom: 36px;
+    padding-left: 25px
+}
+
+.time-description_info {
+    width: auto
+}
+
+.time-description {
+    padding: 25px 10px 10px 25px;
+    background: #f4fbfc
+}
+
+.time-description_title {
+    color: #93a2a8;
+    font-size: 16px
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important
+}
+
+.confirmation_title {
+    font-size: 16px;
+    color: #0f3840;
+    margin-bottom: 25px;
+    width: 420px
+}
+
+.confirmation .label-confirm.text-link {
+    color: #0f3840;
+    display: inline
+}
+
+.confirmation > label {
+    display: block;
+    margin-bottom: 10px;
+    position: relative
+}
+
+.confirmation {
+    padding: 0 20px
+}
+
+.licences_block {
+    position: relative
+}
+
+.checkbox-custom, .label-confirm {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.checkbox-custom {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px
+}
+
+.container-button_step-2 {
+    padding: 0 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.btn.btn-default.submit {
+    background: #000 !important;
+    text-transform: uppercase;
+    border-color: #000 !important
+}
+
+label.error {
+    color: #e62222 !important;
+    top: 0;
+    right: 0;
+    margin: 2px 0 0;
+    display: block;
+    padding: 0;
+    font-size: 0.8em;
+    line-height: 1.5em
+}
+
+.confirmation label.error, .personal-info-quiz label.error {
+    display: none !important
+}
+
+.form-item {
+    position: relative
+}
+
+.form-item.error .icon-error {
+    display: inline-block
+}
+
+label.error:not(.hide) + .radio-custom, .personal-info-input.required.error + .radio-custom, .personal-info-quiz label.error + .checkbox-custom, .personal-info-input.required.error, .confirmation label.error:not(.hide) + .checkbox-custom {
+    box-shadow: 0 0 5px #fb5f5f;
+    border: 1px solid #fb5f5f
+}
+
+.form-item.error .personal-info-input {
+    box-shadow: 0 0 5px #f77761;
+    border: 1px solid #f77761
+}
+
+div:not(.bx-core-window) input[type="checkbox"]:not(.adm-designed-checkbox) {
+    display: block !important;
+    visibility: hidden !important;
+    position: absolute !important
+}
+
+div:not(.bx-core-window) input[type="checkbox"]:not(.adm-designed-checkbox) ~ label:before {
+    display: none !important
+}
+
+.btn.btn-default.button-prev {
+    position: relative;
+    text-transform: uppercase
+}
+
+.button-prev:before {
+    background: transparent;
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 1px;
+    border-color: #fff;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+    position: relative;
+    top: 2px
+}
+
+.check_mark {
+    width: 80px;
+    height: 130px;
+    margin: 0 auto
+}
+
+.hide {
+    display: none
+}
+
+.sa-icon {
+    width: 80px;
+    height: 80px;
+    border: 4px solid gray;
+    border-radius: 50%;
+    margin: 20px auto;
+    padding: 0;
+    position: relative;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+.sa-icon.sa-success {
+    border-color: transparent \9
+}
+
+.sa-icon.sa-success::before, .sa-icon.sa-success::after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.sa-icon.sa-success::before {
+    border-radius: 120px 0 0 120px;
+    top: -7px;
+    left: -33px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 60px 60px;
+    transform-origin: 60px 60px
+}
+
+.personal-info {
+    margin-top: 30px
+}
+
+.sa-icon.sa-success::after {
+    border-radius: 0 120px 120px 0;
+    top: -11px;
+    left: 30px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 60px;
+    transform-origin: 0 60px
+}
+
+input::placeholder {
+    color: #d8d8d8;
+    opacity: 1
+}
+
+input:-ms-input-placeholder {
+    color: #d8d8d8
+}
+
+input::-ms-input-placeholder {
+    color: #d8d8d8
+}
+
+.sa-icon.sa-success .sa-placeholder {
+    width: 80px;
+    height: 80px;
+    border: 4px solid rgba(76, 175, 80, 0.5);
+    border-radius: 50%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    z-index: 2
+}
+
+.sa-icon.sa-success .sa-fix {
+    width: 5px;
+    height: 90px;
+    background-color: #fff;
+    position: absolute;
+    left: 28px;
+    top: 8px;
+    z-index: 1;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.content_mess {
+    color: #0f3840;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 30px
+}
+
+.container-button label {
+    margin-top: 20px
+}
+
+.sa-icon.sa-success.animate::after {
+    -webkit-animation: rotatePlaceholder 4.25s ease-in;
+    animation: rotatePlaceholder 4.25s ease-in
+}
+
+.sa-icon.sa-success .sa-line.sa-tip {
+    -ms-transform: rotate(45deg) \9;
+    width: 25px;
+    left: 14px;
+    top: 46px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.sa-icon.sa-success .sa-line.sa-long {
+    -ms-transform: rotate(-45deg) \9;
+    width: 47px;
+    right: 8px;
+    top: 38px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.animateSuccessTip {
+    -webkit-animation: animateSuccessTip 0.75s;
+    animation: animateSuccessTip 0.75s
+}
+
+.animateSuccessLong {
+    -webkit-animation: animateSuccessLong 0.75s;
+    animation: animateSuccessLong 0.75s
+}
+
+.label-confirm.text-link {
+    display: inline;
+    color: #0f3840
+}
+
+.confirmation_title.visit_title.privacy {
+    margin: 20px 1px 10px 3px;
+}
+
+@-webkit-keyframes animateSuccessLong {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    84% {
+        width: 55px;
+        right: 0;
+        top: 35px
+    }
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px
+    }
+}
+
+@-webkit-keyframes animateSuccessTip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px
+    }
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px
+    }
+}
+
+@keyframes animateSuccessTip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px
+    }
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px
+    }
+}
+
+@keyframes animateSuccessLong {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    84% {
+        width: 55px;
+        right: 0;
+        top: 35px
+    }
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px
+    }
+}
+
+.sa-icon.sa-success .sa-line {
+    height: 5px;
+    background-color: #4CAF50;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2
+}
+
+@-webkit-keyframes rotatePlaceholder {
+    0% {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg)
+    }
+    5% {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg)
+    }
+    12% {
+        transform: rotate(-405deg);
+        -webkit-transform: rotate(-405deg)
+    }
+    100% {
+        transform: rotate(-405deg);
+        -webkit-transform: rotate(-405deg)
+    }
+}
+
+@keyframes rotatePlaceholder {
+    0% {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg)
+    }
+    5% {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg)
+    }
+    12% {
+        transform: rotate(-405deg);
+        -webkit-transform: rotate(-405deg)
+    }
+    100% {
+        transform: rotate(-405deg);
+        -webkit-transform: rotate(-405deg)
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapper-field {
+        width: 50%
+    }
+
+    .col-info__visit {
+        width: 46%
+    }
+
+    .col-confirmation-info {
+        width: 54%
+    }
+}
+
+@media (max-width: 767px) {
+    .visit_title {
+        padding-left: 0;
+    }
+    .left-col__form {
+        width: 100%;
+        padding: 0
+    }
+
+    .wrapper-field {
+        width: 100%
+    }
+
+    .col-info__visit {
+        width: 100%
+    }
+
+    .col-confirmation-info {
+        width: 100%;
+        padding-left: 0
+    }
+
+    .personal-info {
+        margin-top: 0
+    }
+
+    .time-description {
+        padding: 15px 0 10px 20px
+    }
+
+    .confirmation_title {
+        margin-top: 15px
+    }
+
+    .container-button_step-2 {
+        padding: 0 15px
+    }
+
+    .container-button {
+        margin-top: 30px
+    }
+}
