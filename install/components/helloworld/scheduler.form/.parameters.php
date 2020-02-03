@@ -5,28 +5,9 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) {
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
-use HelloWorld\Scheduler\Helpers\HlblockHelper;
-
-/** @var array $arCurrentValues */
-
-if (!\Bitrix\Main\Loader::includeModule('highloadblock')) {
-    return;
-}
 
 if(!Loader::includeModule("helloworld.scheduler")) {
     return;
-}
-
-$helper = new HlblockHelper();
-
-$arProp = [];
-$dbRes = CUserTypeEntity::GetList(
-    ['SORT' => 'ASC'],
-    ['ENTITY_ID' => $helper->getEntityId('Appointments'), 'LANG' => 'ru']
-);
-$enumPropId = [];
-while ($arRes = $dbRes->Fetch()) {
-    $arProp[$arRes["FIELD_NAME"]] = "[".$arRes["ID"]."] ".$arRes["LIST_COLUMN_LABEL"];
 }
 
 $arComponentParameters = array(
@@ -41,6 +22,42 @@ $arComponentParameters = array(
         ),
     ),
     "PARAMETERS" => array(
+        "DATE_REG" => array(
+            "PARENT" => "BASE",
+            "NAME" => Loc::getMessage("DATE_REG"),
+            "TYPE" => "STRING",
+            "DEFAULT" => '',
+        ),
+        "TIME_REG" => array(
+            "PARENT" => "BASE",
+            "NAME" => Loc::getMessage("TIME_REG"),
+            "TYPE" => "STRING",
+            "DEFAULT" => '',
+        ),
+        "DOCTOR" => array(
+            "PARENT" => "BASE",
+            "NAME" => Loc::getMessage("DOCTOR"),
+            "TYPE" => "STRING",
+            "DEFAULT" => '',
+        ),
+        "DOC_ID" => array(
+            "PARENT" => "BASE",
+            "NAME" => Loc::getMessage("DOC_ID"),
+            "TYPE" => "STRING",
+            "DEFAULT" => '',
+        ),
+        "CARD_ID" => array(
+            "PARENT" => "BASE",
+            "NAME" => Loc::getMessage("CARD_ID"),
+            "TYPE" => "STRING",
+            "DEFAULT" => '',
+        ),
+        "DEPARTMENT" => array(
+            "PARENT" => "BASE",
+            "NAME" => Loc::getMessage("DEPARTMENT"),
+            "TYPE" => "STRING",
+            "DEFAULT" => '',
+        ),
         "PROPERTY_CODES" => array(
             "PARENT" => "BASE",
             "NAME" => Loc::getMessage("PROPERTY_CODES"),
@@ -61,36 +78,6 @@ $arComponentParameters = array(
             "ADDITIONAL_VALUES" => "Y",
             "REFRESH" => "Y",
         ),
-        "PERIOD_END" => array(
-            "PARENT" => "BASE",
-            "NAME" => Loc::getMessage("PERIOD_END"),
-            "TYPE" => "STRING",
-            "DEFAULT" => "9",
-        ),
-        "NAME_CARD_IM" => array(
-            "PARENT" => "SIGN",
-            "NAME" => Loc::getMessage("NAME_CARD_IM"),
-            "TYPE" => "STRING",
-            "DEFAULT" => "талон",
-        ),
-        "NAME_CARD_ROD" => array(
-            "PARENT" => "SIGN",
-            "NAME" => Loc::getMessage("NAME_CARD_ROD"),
-            "TYPE" => "STRING",
-            "DEFAULT" => "талона",
-        ),
-        "NAME_CARD_MULTI" => array(
-            "PARENT" => "SIGN",
-            "NAME" => Loc::getMessage("NAME_CARD_MULTI"),
-            "TYPE" => "STRING",
-            "DEFAULT" => "талонов",
-        ),
-        "NAME_CARD_NOT" => array(
-            "PARENT" => "SIGN",
-            "NAME" => Loc::getMessage("NAME_CARD_NOT"),
-            "TYPE" => "STRING",
-            "DEFAULT" => "нет талонов",
-        ),
         "LINK_PRIVACY" => array(
             "PARENT" => "SIGN",
             "NAME" => Loc::getMessage("LINK_PRIVACY"),
@@ -108,12 +95,6 @@ $arComponentParameters = array(
             "NAME" => Loc::getMessage("SEF_URL_TEMPLATES"),
             "TYPE" => "STRING",
             "DEFAULT" => "/scheduler/",
-        ),
-        "IS_FLEXSLIDER" => array(
-            "PARENT" => "PLUGINS",
-            "NAME" => Loc::getMessage("IS_FLEXSLIDER"),
-            "TYPE" => "CHECKBOX",
-            "DEFAULT" => "Y",
         ),
         "IS_MASKED_INPUT" => array(
             "PARENT" => "PLUGINS",

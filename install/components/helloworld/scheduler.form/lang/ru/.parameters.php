@@ -1,4 +1,10 @@
 <?
+$MESS["DATE_REG"] = "Дата записи";
+$MESS["TIME_REG"] = "Время записи";
+$MESS["DOCTOR"] = "Специалист";
+$MESS["DOC_ID"] = "ID специалиста";
+$MESS["CARD_ID"] = "ID талона";
+$MESS["DEPARTMENT"] = "Отделение";
 $MESS["PROPERTY_CODES"] = "Свойства Блока Записи на прием";
 $MESS["PROPERTY_CODES_REQUIRED"] = "Обязательные свойства";
 $MESS["TITLE_SECTION"] = "Заголовок раздела";

@@ -5,28 +5,9 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) {
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
-use HelloWorld\Scheduler\Helpers\HlblockHelper;
-
-/** @var array $arCurrentValues */
-
-if (!\Bitrix\Main\Loader::includeModule('highloadblock')) {
-    return;
-}
 
 if(!Loader::includeModule("helloworld.scheduler")) {
     return;
-}
-
-$helper = new HlblockHelper();
-
-$arProp = [];
-$dbRes = CUserTypeEntity::GetList(
-    ['SORT' => 'ASC'],
-    ['ENTITY_ID' => $helper->getEntityId('Appointments'), 'LANG' => 'ru']
-);
-$enumPropId = [];
-while ($arRes = $dbRes->Fetch()) {
-    $arProp[$arRes["FIELD_NAME"]] = "[".$arRes["ID"]."] ".$arRes["LIST_COLUMN_LABEL"];
 }
 
 $arComponentParameters = array(
@@ -41,26 +22,6 @@ $arComponentParameters = array(
         ),
     ),
     "PARAMETERS" => array(
-        "PROPERTY_CODES" => array(
-            "PARENT" => "BASE",
-            "NAME" => Loc::getMessage("PROPERTY_CODES"),
-            "TYPE" => "LIST",
-            "VALUES" => $arProp,
-            "DEFAULT" => '',
-            "MULTIPLE" => "Y",
-            "ADDITIONAL_VALUES" => "Y",
-            "REFRESH" => "Y",
-        ),
-        "PROPERTY_CODES_REQUIRED" => array(
-            "PARENT" => "BASE",
-            "NAME" => Loc::getMessage("PROPERTY_CODES_REQUIRED"),
-            "TYPE" => "LIST",
-            "VALUES" => $arProp,
-            "DEFAULT" => '',
-            "MULTIPLE" => "Y",
-            "ADDITIONAL_VALUES" => "Y",
-            "REFRESH" => "Y",
-        ),
         "PERIOD_END" => array(
             "PARENT" => "BASE",
             "NAME" => Loc::getMessage("PERIOD_END"),
@@ -91,18 +52,6 @@ $arComponentParameters = array(
             "TYPE" => "STRING",
             "DEFAULT" => "нет талонов",
         ),
-        "LINK_PRIVACY" => array(
-            "PARENT" => "SIGN",
-            "NAME" => Loc::getMessage("LINK_PRIVACY"),
-            "TYPE" => "STRING",
-            "DEFAULT" => Loc::getMessage("LINK_PRIVACY_DEFAULT"),
-        ),
-        "MESSAGE_SUCCESS" => array(
-            "PARENT" => "SIGN",
-            "NAME" => Loc::getMessage("MESSAGE_SUCCESS"),
-            "TYPE" => "STRING",
-            "DEFAULT" => Loc::getMessage("MESSAGE_SUCCESS_DEFAULT"),
-        ),
         "SEF_URL_TEMPLATE" => array(
             "PARENT" => "BASE",
             "NAME" => Loc::getMessage("SEF_URL_TEMPLATES"),
@@ -114,19 +63,7 @@ $arComponentParameters = array(
             "NAME" => Loc::getMessage("IS_FLEXSLIDER"),
             "TYPE" => "CHECKBOX",
             "DEFAULT" => "Y",
-        ),
-        "IS_MASKED_INPUT" => array(
-            "PARENT" => "PLUGINS",
-            "NAME" => Loc::getMessage("IS_MASKED_INPUT"),
-            "TYPE" => "CHECKBOX",
-            "DEFAULT" => "Y",
-        ),
-        "IS_VALIDATER" => array(
-            "PARENT" => "PLUGINS",
-            "NAME" => Loc::getMessage("IS_VALIDATER"),
-            "TYPE" => "CHECKBOX",
-            "DEFAULT" => "Y",
-        ),
+        )
         "CACHE_TIME"  =>  array("DEFAULT"=>36000000),
     ),
 );
