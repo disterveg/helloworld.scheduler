@@ -10,3 +10,8 @@ Contain:
  
 This module for remote schedule appointments with a specialist. Developed on based core d7. 
 Data save in higloadblocks. Used bitrix ORM.
+
+Installation:
+ - copy repository to /bitrix/modules/
+ - in admin panel Marketplace -> Installed Solutions 
+ - install this module
